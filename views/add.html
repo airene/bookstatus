@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>增加书籍</title>
+    <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../static/theme/default/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+   
+    <div class="jumbotron">
+      <div class="container">
+        <h1><!--<span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;--><a class="a" href="/">Xiaoma Bank - 书籍借阅状态</a></h1>
+        <p class="subtitle">及时查看公司书籍的借阅状态 | 善待书籍 -->  知识就是生产力</p>
+        <p><h5><span class="label label-warning">GOlang ver 0.0.1</span></h5></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="page-header">
+        <h2>增加书籍</h2>
+      </div>
+      <form class="form-horizontal" action="/add" method="post" role="form" style="width:500px;padding:30px 0">
+        <div class="form-group">
+          <label for="bookcode" class="col-sm-2 control-label">编号</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="bookcode" name="bookcode" placeholder="eg. T002">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="bookname" class="col-sm-2 control-label">图书名称</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="bookname" name="bookname" placeholder="输入一个图书名称">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-success">Add Book</button>
+          </div>
+        </div>
+      </form>
+      <hr>
+      <footer>
+        <p>&copy; Xiaoma Bank 2014 &nbsp;&nbsp; | &nbsp;&nbsp; <a class="c" href="/add">添加图书</a></p>
+      </footer>
+    </div>
+
+    <script src="../static/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

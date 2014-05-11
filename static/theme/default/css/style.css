@@ -1,0 +1,24 @@
+﻿body { font-family: 'Microsoft Yahei'}
+
+a.a:link      { color: #dbfdf6;text-decoration: none;}
+a.a:visited  { color: #dbfdf6;text-decoration: none;}
+a.a:hover   { color: #fff;text-decoration: none;}
+a.c:link      { color: #16A085;text-decoration: none;}
+a.c:visited  { color: #16A085;text-decoration: none;}
+a.c:hover   { color: #000;text-decoration: none;}
+
+.jumbotron {background-color: #1ABC9C;}
+.jumbotron h1 {color: #dbfdf6;font-family: 'Microsoft Yahei'; text-shadow: 0 1px 0 #136958;}
+.page-header h2 {font-family: 'Microsoft Yahei'; }
+.subtitle {color: #fff;font-size: 15px;text-shadow: 0 1px 0 #1d9079;}
+.tab-content { padding:20px 0;}
+
+.bookcontent {width:500px;margin:0 auto;padding:30px 0}
+
+.table > thead {background: #ecfffb;}
+
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 1px solid #dddddd;
+  line-height: 36px;
+}
