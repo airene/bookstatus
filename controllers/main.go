@@ -40,10 +40,12 @@ func (this *MainController) Save() {
 	if this.Ctx.Request.Method == "POST" {
 		bookcode := strings.TrimSpace(this.GetString("bookcode"))
 		bookname := strings.TrimSpace(this.GetString("bookname"))
+		booktype := strings.TrimSpace(this.GetString("booktype"))
 
 		var book models.Book
 		book.Bookcode = bookcode
 		book.Bookname = bookname
+		book.Booktype = booktype
 		if err := book.Insert(); err != nil {
 			//
 		}
@@ -79,7 +81,6 @@ func (this *MainController) BorrowSave() {
 	if err := borrowlog.Insert(); err != nil {
 		//
 	}
-
 	this.Redirect("/", 302)
 }
 

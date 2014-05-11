@@ -14,6 +14,7 @@ type Book struct {
 	Borrowtime  time.Time `orm:"auto_now_add;type(datetime)"`
 	Status      int8
 	Borrowcount int64
+	Booktype    string `orm:"size(45)"`
 }
 
 func (m *Book) TableName() string {
