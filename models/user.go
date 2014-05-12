@@ -7,10 +7,10 @@ import (
 
 //用户表模型
 type User struct {
-	Id          int64
-	Username    string    `orm:"size(20)"`
-	Password    string    `orm:"unique;size(100)"`
-	Userrole    string    `orm:"size(40)"`
+	Id       int64
+	Username string    `orm:"size(20)"`
+	Password string    `orm:"unique;size(100)"`
+	Userrole string    `orm:"size(40)"`
 	Regtime  time.Time `orm:"auto_now_add;type(datetime)"`
 }
 
@@ -27,6 +27,7 @@ func (m *User) Insert() error {
 
 func (m *User) Read(fields ...string) error {
 	if err := orm.NewOrm().Read(m, fields...); err != nil {
+
 		return err
 	}
 	return nil
