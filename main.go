@@ -7,18 +7,18 @@ import (
 )
 
 func main() {
+	//for print sql
 	if beego.AppConfig.String("Runmode") == "dev" {
 		orm.Debug = true
 	}
 
-	//route config 
-	beego.Router("/", &controllers.MainController{},"get:Get")
-	beego.Router("/add", &controllers.MainController{},"get:Add")
-	beego.Router("/add", &controllers.MainController{},"post:Save")
-	beego.Router("/borrow", &controllers.MainController{},"get:Borrow")
-	beego.Router("/borrow", &controllers.MainController{},"post:BorrowSave")
-	beego.Router("/back", &controllers.MainController{},"get:Back")
+	//route config
+	beego.Router("/", &controllers.MainController{}, "get:Get")
+	beego.Router("/add", &controllers.MainController{}, "get:Add")
+	beego.Router("/add", &controllers.MainController{}, "post:Save")
+	beego.Router("/borrow", &controllers.MainController{}, "get:Borrow")
+	beego.Router("/borrow", &controllers.MainController{}, "post:BorrowSave")
+	beego.Router("/back", &controllers.MainController{}, "get:Back")
 
 	beego.Run()
 }
-
