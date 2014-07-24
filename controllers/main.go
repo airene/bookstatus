@@ -10,8 +10,7 @@ type MainController struct {
 	beego.Controller
 }
 
-func (this *MainController) Get() {
-
+func (this *MainController) Index() {
 	// 可借图书
 	var bookList []*models.Book
 	query := new(models.Book).Query().Filter("status", 0)

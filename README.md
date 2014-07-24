@@ -1,7 +1,7 @@
 bookstatus
 ==========
 
-synyou book status
+xiaomabank book status
 
 GO语言实现的一个简单图书管理系统
 

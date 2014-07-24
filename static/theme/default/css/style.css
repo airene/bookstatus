@@ -1,4 +1,5 @@
-﻿body { font-family: 'Microsoft Yahei'}
+﻿body { font-family:"Microsoft YaHei","Lucida Sans Unicode","Myriad Pro","Hiragino Sans GB","Heiti SC",Verdana,simsun;}
+h1 { font-family:"Microsoft YaHei","Lucida Sans Unicode","Myriad Pro","Hiragino Sans GB","Heiti SC",Verdana,simsun;}
 
 a.a:link      { color: #dbfdf6;text-decoration: none;}
 a.a:visited  { color: #dbfdf6;text-decoration: none;}
@@ -8,8 +9,8 @@ a.c:visited  { color: #16A085;text-decoration: none;}
 a.c:hover   { color: #000;text-decoration: none;}
 
 .jumbotron {background-color: #1ABC9C;}
-.jumbotron h1 {color: #dbfdf6;font-family: 'Microsoft Yahei'; text-shadow: 0 1px 0 #136958;}
-.page-header h2 {font-family: 'Microsoft Yahei'; }
+.jumbotron h1 {color: #dbfdf6; text-shadow: 0 1px 0 #136958;}
+.page-header h2 {}
 .subtitle {color: #fff;font-size: 15px;text-shadow: 0 1px 0 #1d9079;}
 .tab-content { padding:20px 0;}
 

@@ -13,7 +13,7 @@ func main() {
 	}
 
 	//route config
-	beego.Router("/", &controllers.MainController{}, "get:Get")
+	beego.Router("/", &controllers.MainController{}, "get:Index")
 	beego.Router("/add", &controllers.MainController{}, "get:Add")
 	beego.Router("/add", &controllers.MainController{}, "post:Save")
 	beego.Router("/borrow", &controllers.MainController{}, "get:Borrow")
@@ -21,4 +21,5 @@ func main() {
 	beego.Router("/back", &controllers.MainController{}, "get:Back")
 
 	beego.Run()
+
 }

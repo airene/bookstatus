@@ -11,12 +11,12 @@
   </head>
 
   <body>
-   
+  
     <div class="jumbotron">
       <div class="container">
         <h1><!--<span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;--><a class="a" href="/">Xiaoma Bank - 书籍借阅状态</a></h1>
-        <p class="subtitle">及时查看公司书籍的借阅状态 &nbsp;&nbsp; | &nbsp;&nbsp; 请善待书籍 -->  知识就是生产力</p>
-        <p><h5><span class="label label-warning">GOlang ver 0.0.1</span></h5></p>
+        <p class="subtitle">及时查看公司书籍的借阅状态 &nbsp;&nbsp; | &nbsp;&nbsp; 请善待书籍 - 黄金非宝书为宝</p>
+        <p><span class="label label-warning">GOlang ver 0.0.1</span></p>
       </div>
     </div>
 
@@ -40,7 +40,7 @@
                 </tr>
               </thead>
               <tbody>
-             {{range $k, $v := .bookList}}
+              {{range $k, $v := .bookList}}
                 <tr>
                   <td>{{$v.Bookcode}}</td>
                   <td>《{{$v.Bookname}}》</td>
@@ -48,7 +48,7 @@
                   <td>{{$v.Borrowcount}}</td>
                   <td><a href="/borrow?id={{$v.Id}}" class="btn btn-success btn-sm">我要借阅</a></td>
                 </tr>
-             {{end}}
+              {{end}}
               </tbody>
             </table>
           
